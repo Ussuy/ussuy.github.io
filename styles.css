@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(blue, pink);
+    overflow: hidden;
+    font-family: 'Manrope';
+    padding: 10px;
+    margin: 0;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('https://res.cloudinary.com/dlxkadzbp/image/upload/v1587071328/eu_w11o3j.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.profile_title {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.profile_subtitle {
+    font-weight: 400;
+    margin-top: 0;
+}
