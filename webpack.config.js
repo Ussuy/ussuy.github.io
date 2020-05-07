@@ -19,12 +19,15 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            }, {
+            }, 
+
+            {
                 test: /\.(png|svg|jpg)$/,
                 use: [
                     'file-loader'
                 ]
             },
+
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -52,6 +55,7 @@ module.exports = {
     resolve: {
         alias: {
             css: path.resolve(__dirname, 'src/css'),
+            js: path.resolve(__dirname, 'src/js'),
             image: path.resolve(__dirname, 'src/images'),
         },
     },
