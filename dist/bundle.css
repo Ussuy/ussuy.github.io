@@ -30,6 +30,12 @@ body {
   padding: 18px;
 }
 body .header {
+  position: fixed;
+  padding: 18px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,9 +58,19 @@ body .header_item {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 body .header_item:not(last-child) {
   margin-right: 10px;
+}
+body .header_item:hover {
+  transition: all ease-in;
+  border-bottom: 1px solid white;
+}
+body .header_item--active {
+  border-bottom: 1px solid white;
 }
 body .main {
   height: 400px;

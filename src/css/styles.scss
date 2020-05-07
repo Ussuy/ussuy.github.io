@@ -47,6 +47,12 @@ body {
   height: 100vh;
   padding: 18px;
   .header {
+    position: fixed;
+    padding: 18px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,8 +76,18 @@ body {
       font-size: 16px;
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
+      padding: 5px;
+      cursor: pointer;
+      transition: all .5s ease-in;
       &:not(last-child) {
         margin-right: 10px;
+      }
+      &:hover {
+        transition: all ease-in;
+        border-bottom: 1px solid white;
+      }
+      &--active {
+        border-bottom: 1px solid white;
       }
     }
   }      
