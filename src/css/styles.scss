@@ -92,14 +92,30 @@ body {
     }
   }      
   .main {
+    transition: all 1s ease-in;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-left: 50px;
-    &_wrap {
+    &_principal {
       color: white;
+      opacity: 0;
+    }
+    &_title {
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+    &_subtitle {
+      text-transform: uppercase;
+      color: lightblue;
+      font-size: 28px;
+    }
+    &_description {
+      color: white;
+      opacity: 0;
     }
     &_title {
       margin-bottom: 15px;
@@ -112,4 +128,8 @@ body {
       font-size: 28px;
     }
   }
+}
+
+.active {
+  opacity: 1!important;
 }
